@@ -4,7 +4,7 @@ import os
 import requests
 
 
-def main():
+def main(test):
     print("hello world!")
 
 
