@@ -1,12 +1,4 @@
-import json
-import os
-
-import requests
-
-
-
-
-def main(test):
+def main():
     print("hello world!")
 
 

@@ -5,7 +5,7 @@ repos:
         name: isort
         stages: [commit]
         language: system
-        entry: isort
+        entry: isort pwork
         types: [python]
 
       - id: black
@@ -31,16 +31,9 @@ repos:
         types: [python]
         pass_filenames: false
 
-      - id: pytest
-        name: pytest
-        stages: [commit]
-        language: system
-        entry: pytest
-        types: [python]
-
       - id: pytest-cov
         name: pytest
-        stages: [push]
+        stages: [commit]
         language: system
         entry: pytest --cov --cov-fail-under=10
         types: [python]
