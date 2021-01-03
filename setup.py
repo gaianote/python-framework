@@ -4,7 +4,7 @@ from setuptools import setup
 
 here = os.path.abspath(os.path.dirname(__file__))
 
-VERSION = "0.0.2"
+VERSION = "0.0.3"
 
 with open(os.path.join(here, "README.md"), encoding="utf-8") as f:
     long_description = f.read()
