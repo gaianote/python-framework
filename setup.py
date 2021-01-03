@@ -4,7 +4,7 @@ from setuptools import setup
 
 here = os.path.abspath(os.path.dirname(__file__))
 
-VERSION = "0.0.1"
+VERSION = "0.0.2"
 
 with open(os.path.join(here, "README.md"), encoding="utf-8") as f:
     long_description = f.read()
@@ -15,6 +15,7 @@ setup(
     packages=["pwork"],
     url="https://github.com/gaianote/python-framework",
     author="gaianote",
+    author_email="gaianote311@gmail.com",
     long_description=long_description,
     long_description_content_type="text/markdown",
     include_package_data=True,
@@ -31,8 +32,6 @@ setup(
     install_requires=["pipenv","cookiecutter"],
     extras_require={
         "dev": [
-            "autopep8",
-            "pylint",
             "pytest",
             "mypy",
             "flake8",

@@ -15,6 +15,7 @@ setup(
     packages=["pwork"],
     url="{{cookiecutter.project_url}}",
     author="{{cookiecutter.author_name}}",
+    author_email="{{cookiecutter.author_email}}",
     long_description=long_description,
     long_description_content_type="text/markdown",
     include_package_data=True,
@@ -35,8 +36,6 @@ setup(
     install_requires=[],
     extras_require={
         "dev": [
-            "autopep8",
-            "pylint",
             "pytest",
             "mypy",
             "flake8",
