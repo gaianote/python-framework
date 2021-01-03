@@ -5,21 +5,21 @@ repos:
         name: isort
         stages: [commit]
         language: system
-        entry: pipenv run isort pwork
+        entry: pipenv run isort pwork test
         types: [python]
 
       - id: black
         name: black
         stages: [commit]
         language: system
-        entry: pipenv run black
+        entry: pipenv run black pwork test
         types: [python]
 
       - id: flake8
         name: flake8
         stages: [commit]
         language: system
-        entry: pipenv run flake8
+        entry: pipenv run flake8 pwork test
         types: [python]
         exclude: setup.py
 
@@ -27,7 +27,7 @@ repos:
         name: mypy
         stages: [commit]
         language: system
-        entry: pipenv run mypy
+        entry: pipenv run mypy pwork test
         types: [python]
         pass_filenames: false
 

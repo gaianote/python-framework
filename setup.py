@@ -1,7 +1,6 @@
 import os
-import runpy
 
-from setuptools import find_packages, setup
+from setuptools import setup
 
 here = os.path.abspath(os.path.dirname(__file__))
 
@@ -29,7 +28,7 @@ setup(
         "Operating System :: MacOS",
     ],
     entry_points={"console_scripts": ["pwork = pwork.app:main"]},
-    install_requires=["requests==2.21.0","pipenv",""],
+    install_requires=["pipenv","cookiecutter"],
     extras_require={
         "dev": [
             "autopep8",
