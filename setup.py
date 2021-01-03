@@ -29,7 +29,7 @@ setup(
         "Operating System :: MacOS",
     ],
     entry_points={"console_scripts": ["pwork = pwork.app:main"]},
-    install_requires=["requests==2.21.0"],
+    install_requires=["requests==2.21.0","pipenv",""],
     extras_require={
         "dev": [
             "autopep8",
