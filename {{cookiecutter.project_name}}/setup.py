@@ -10,9 +10,9 @@ with open(os.path.join(here, "README.md"), encoding="utf-8") as f:
     long_description = f.read()
 
 setup(
-    name="pwork",
+    name="{{cookiecutter.project_name}}",
     version=VERSION,
-    packages=["pwork"],
+    packages=["{{cookiecutter.project_name}}"],
     url="{{cookiecutter.project_url}}",
     author="{{cookiecutter.author_name}}",
     author_email="{{cookiecutter.author_email}}",

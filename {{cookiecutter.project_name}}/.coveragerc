@@ -1,5 +1,5 @@
 [run]
-source = pwork
+source = {{cookiecutter.project_name}}
 
 [report]
 exclude_lines =
